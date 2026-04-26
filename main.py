@@ -19,6 +19,7 @@ def build_model():
 def predict_image(img_path, model):
     face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
     img = cv2.imread(img_path)
+    if img is None: return 'Error loading image', 0
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     faces = face_cascade.detectMultiScale(gray, 1.1, 3)
     for (x, y, w, h) in faces:
