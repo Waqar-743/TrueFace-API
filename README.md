@@ -19,3 +19,4 @@ An end-to-end computer vision pipeline to distinguish real human faces from prin
 ## 📂 Contents
 - `main.py`: Full model architecture and inference logic.
 - `liveness_model_v3_robust.keras`: Pre-trained robust model weights.
+- `requirements.txt`: Environment dependencies.

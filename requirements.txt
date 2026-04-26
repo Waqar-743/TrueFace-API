@@ -1,0 +1,5 @@
+tensorflow>=2.15.0
+opencv-python-headless
+numpy<2.0.0
+matplotlib
+Pillow
